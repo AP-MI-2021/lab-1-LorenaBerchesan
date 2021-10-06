@@ -1,33 +1,32 @@
-'''
-Returneaza true daca n este prim si false daca nu.
-'''
-def is_prime(n):
-  # codul vostru aici
-  
-  
-'''
-Returneaza produsul numerelor din lista lst.
-'''
-def get_product(lst):
-  # codul vostru aici
-  
-  
-'''
-Returneaza CMMDC a doua numere x si y folosind primul algoritm.
-'''
-def get_cmmdc_v1(x, y):
-  # codul vostru aici
-  
-  
-'''
-Returneaza CMMDC a doua numere x si y folosind al doilea algoritm.
-'''
-def get_cmmdc_v2(x, y):
-  # codul vostru aici
-  
-  
-def main():
-  # interfata de tip consola aici
+'prob 1-numar prim'
+'''nr=int(input('nr:'))
+e_prim= True
+for i in range (2, nr//2+1):
+        if nr%i==0 or nr==1 or nr==0:
+            print('nu e prim')
+            e_prim=False
 
-if __name__ == '__main__':
-  main()
+if e_prim:
+    print ('e prim')'''
+
+
+'prob 2-produsul a n numere'
+'''n=int(input('numar:'))
+p=1
+for i in range(0, n):
+    nr=int(input('Numere:'))
+    p=p*nr
+print(p)'''
+
+
+'prob 3-cmmdc'
+a = int(input('primul numar:'))
+b = int(input('al doilea numar:'))
+while a != b:
+    if a > b:
+        a = a - b
+    else:
+        b = b - a
+print('cmmdc=', a)
+
+
